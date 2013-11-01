@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuerySample.WebForm40", "QuerySample.WebForm40.csproj", "{74F2B7DC-D7C8-4FC2-8A99-52942EB9B182}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuerySample.WebForm40", "QuerySample.WebForm40\QuerySample.WebForm40.csproj", "{74F2B7DC-D7C8-4FC2-8A99-52942EB9B182}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Query.Sample.Model", "..\Query.Sample.Model\Query.Sample.Model.csproj", "{F6B6FC52-EF63-4B12-BAC8-EE4854DA6A55}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Query.Sample.Model", "Query.Sample.Model\Query.Sample.Model.csproj", "{F6B6FC52-EF63-4B12-BAC8-EE4854DA6A55}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
