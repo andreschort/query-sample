@@ -1,11 +1,11 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="QuerySample.WebForm40._Default" %>
+﻿<%@ Page Title="Query - Sample" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="QuerySample.WebForm40._Default" %>
 
 <%@ Register TagPrefix="query" Namespace="Query.Web" Assembly="Query.Web" %>
 
 <asp:Content runat="server" ID="FeaturedContent" ContentPlaceHolderID="FeaturedContent">
 </asp:Content>
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-    <query:GridExtender ID="GridExtender" runat="server" GridViewId="GridView" AutoFilterDelay="2000" Placeholder="Filter..."
+    <query:GridExtender ID="GridExtender" runat="server" GridViewId="GridView" AutoFilterDelay="1000" Placeholder="Filter..."
                         OnFilter="GridExtender_Filter" OnSort="GridExtender_Sort" />
     <asp:GridView ID="GridView" runat="server" AutoGenerateColumns="False" ShowHeaderWhenEmpty="True" AllowPaging="True" AllowSorting="False" PageSize="8">
         <Columns>
@@ -22,8 +22,7 @@
             <query:TextField Name="AttachmentCount" HeaderText="Number of attachments" />
             <query:TextField Name="Cuit" HeaderText="CUIT" />
             <query:TextField Name="AverageHourlyWage" HeaderText="Wage" />
-            <query:DynamicField Name="Dynamic" HeaderText="Dynamic" Format="d" OnClick="Dynamic_Click">
-            </query:DynamicField>
+            <query:DynamicField Name="Dynamic" HeaderText="Dynamic" Format="d" OnClick="Dynamic_Click" />
         </Columns>
         <PagerSettings Mode="NumericFirstLast" PageButtonCount="4"  FirstPageText="First" LastPageText="Last"/>
     </asp:GridView>
