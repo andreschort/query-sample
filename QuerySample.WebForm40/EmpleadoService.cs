@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Query.Common;
 using Query.Sample.Model;
-using Query.Core;
+using QueryTables.Common;
+using QueryTables.Core;
 
 namespace QuerySample.WebForm40
 {

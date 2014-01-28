@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Query.Common.Extension;
 using Query.Sample.Model;
-using Query.Web;
-using SortDirection = Query.Common.SortDirection;
+using QueryTables.Common.Extension;
+using QueryTables.Web;
+using SortDirection = QueryTables.Common.SortDirection;
 
 namespace QuerySample.WebForm40
 {

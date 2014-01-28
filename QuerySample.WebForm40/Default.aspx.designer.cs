@@ -19,7 +19,7 @@ namespace QuerySample.WebForm40 {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::Query.Web.GridExtender GridExtender;
+        protected global::QueryTables.Web.GridExtender GridExtender;
         
         /// <summary>
         /// GridView control.

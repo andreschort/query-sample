@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="Query - Sample" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="QuerySample.WebForm40._Default" %>
 
-<%@ Register TagPrefix="query" Namespace="Query.Web" Assembly="Query.Web" %>
+<%@ Register TagPrefix="query" Namespace="QueryTables.Web" Assembly="QueryTables.Web" %>
 
 <asp:Content runat="server" ID="FeaturedContent" ContentPlaceHolderID="FeaturedContent">
 </asp:Content>

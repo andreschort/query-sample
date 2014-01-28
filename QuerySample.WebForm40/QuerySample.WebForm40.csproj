@@ -39,15 +39,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Query.Common">
-      <HintPath>..\..\query\Query.Core\bin\Debug\Query.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Query.Core">
-      <HintPath>..\..\query\Query.Core\bin\Debug\Query.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Query.Web">
-      <HintPath>..\..\query\Query.Web\bin\Debug\Query.Web.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
@@ -276,12 +267,14 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
@@ -303,6 +296,18 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\diouti-light\tfs\Main\Source\QueryTables\QueryTables.Common\QueryTables.Common.csproj">
+      <Project>{322b2398-6e88-4644-8040-cf5b25408811}</Project>
+      <Name>QueryTables.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\diouti-light\tfs\Main\Source\QueryTables\QueryTables.Core\QueryTables.Core.csproj">
+      <Project>{a3c233f5-977a-4877-845c-317c9a2bb968}</Project>
+      <Name>QueryTables.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\diouti-light\tfs\Main\Source\QueryTables\QueryTables.Web\QueryTables.Web.csproj">
+      <Project>{cc117e78-acda-4993-bf8b-1b8a5e7d8d35}</Project>
+      <Name>QueryTables.Web</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Query.Sample.Model\Query.Sample.Model.csproj">
       <Project>{f6b6fc52-ef63-4b12-bac8-ee4854da6a55}</Project>
       <Name>Query.Sample.Model</Name>
